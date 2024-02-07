@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Assets/fontsz/css/all.css">
+    <title>Vulue landing Page</title>
+    <style>
+        
+         .starting-text{
+            font-size: 50px;
+            color: #82A6BE;
+            margin-bottom: 60px;
+        }
+        .container-1{
+           
+            background-image: linear-gradient(180deg, #09305c, #191c31,#000);
+            /* border: 1px solid red; */
+            width: 100%;
+
+            height: 1700px;
+        }
+        .button-div{
+            display: flex;
+            align-items: center;
+            
+        }
+        .iphone{
+            margin-right:2rem ;
+        }
+        /* #navbar{
+            /* background: linear-gradient(to bottom #09305C #000); */
+            
+         */
+        #org-logo{
+            /* background-color: #6D7D84; */
+            font-size: 20px;
+
+        }
+        .whyee{
+            font-size: 30px;
+            margin-bottom:1.8rem ;
+            margin-top: 3rem;
+        }
+        /* .why-paragraph{
+            padding-right: 1rem;
+        padding-left: 1.3rem;
+        } */
+        #paras2{
+            margin-bottom: 1.5rem;
+        }
+        .icon-grid-div{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 15px;
+            margin-top: 25px;
+            margin-bottom: 95px;
+            /* padding: 2rem; */
+        }
+        .up-placed{
+            border-radius: 20px;
+            border-top: 1.9px solid rgba(226, 225, 225, 0.5);
+            border-left: 1px solid rgba(226, 225, 225, 0.5);
+            border-right: 1px solid rgba(226, 225, 225, 0.5);
+            background: linear-gradient(180deg, rgba(189, 187, 187, 0.2) ,rgba(39, 39, 39, 0.2) , rgba(10, 10, 10, 0.1) );
+            /* background: linear-gradient(180deg, rgba(189, 187, 187, 0.2) 50%, rgba(10, 10, 10, 0.1) 50%); */
+
+        }
+        .grid-div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px ;
+        }
+        .big-writing-in-div{
+            
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .small-writing-in-div{
+            font-size: 10px;
+      
+        } 
+        .down-placed{ 
+            border-bottom: 1px solid rgba(226, 225, 225, 0.5);
+            border-left: 1px solid rgba(226, 225, 225, 0.5);
+            border-right: 1px solid rgba(226, 225, 225, 0.5);
+            background: linear-gradient(180deg, rgba(10, 10, 10, 0.1) ,rgba(39, 39, 39, 0.2) ,rgba(189, 187, 187, 0.2)  );
+
+            color:white;
+        }
+        .licensed-container{
+            width: 100%;
+            height: 15rem;
+            background-color: #ffffff02;
+            border: 5px solid #ffffff09;
+            /* border-color: linear-gradient(90deg  rgba(187, 25, 25, 0.2)); */
+            margin-bottom: 10px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            font-size: 15px;
+            margin-top: 8rem;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(8px);
+            /* box-shadow: 3px 3px 3px 3px #ffffff17; */
+        }
+        .text2{
+            justify-self: flex-end;
+            align-self: flex-start;
+            text-decoration: none;
+            outline: none;
+            border-radius: 50%;
+            /* background-color: #ffffff13;z */
+            
+        }
+        .port{
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+        #offer{
+            margin-bottom: 10px;
+            margin-top: 10px;
+            background: transparent ;
+            color: #fff;
+            height: 2rem;
+            padding: 5px;
+            border-radius: 10px;
+           }
+           .yellow-circle{
+            width: 100%;
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+           }
+           .yellow-circle > img{
+            width: 100%;
+           }
+           .text-inside{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            gap: 20px;
+            padding-left: 10px;
+           }
+           .icon-is-here{
+            height: 290px;
+            width: 100%;
+            color: blue;
+        }
+        .paras{
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+        #phones{
+            width: 100%;
+        }
+        #group{
+            font-size: 20px;
+            color: wheat;
+        }
+        hr{
+            margin-top: 1rem;
+            border: 1px solid grey;
+            margin-bottom: 2rem;
+            opacity: .3;
+        }
+        .footside > h3{
+            color: #8C87A6;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            
+        }
+        .footside > p > a{
+            color: #fff;
+            margin-top: 50px;
+            text-decoration: none;
+            outline: none;
+        }
+        .footside > p{
+            margin-top: 20px ;
+            font-weight: bolder;
+            /* opacity: .6; */
+        }
+        .explain{
+            opacity: .4;
+        }
+        a{
+            text-decoration: none;
+        }
+        .white-image{
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 2rem;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .white-image > img{
+            /* width: 100%; */
+            height: 250px;
+            width: 250px;
+        }
+        .white-image > p{
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+       
+        
+        .box-example{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2px;
+            margin-bottom: 10px;
+        }
+        .social-media-icons{
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .social-media-icons > *{
+            border-radius: 50%;
+            background-color: #fff;
+            padding: 10px;
+        }
+        .navbar{
+            display: none;
+        }
+        #see{
+            display: none;
+        }
+        .csr-desktop{
+            display: none;
+        }
+        .get-to-know-us{
+            padding-left: 25px;
+            /* margin-top: 20px; */
+            /* border: 1px solid red; */
+        }
+@media screen and (min-width: 730px){
+    main{
+        padding-right: 4rem;
+        padding-left: 3.3rem;
+        /* position: relative; */
+        /* top: 30px; */
+    }
+    .desktop-button{
+        display: block;
+        width: 30rem;
+        text-align: center;
+        justify-content: center;
+        background-color: rgb(128, 145, 240);
+        height: 3rem;
+        color: #fff;
+        border-radius: 5px;
+        margin-top: 30px;
+        font-weight: bolder;
+    }
+    .qustion{
+        display:block;
+        color: blue;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 17px;
+    
+    }
+    .icon-grid-div{
+        /* display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+        padding: 2px; */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+
+    }
+    .grid-div{
+        border: none;
+        background: transparent;
+        /* background: red; */
+
+        
+    }
+    .bar-slash{
+        font-size: 1000px;
+
+    }
+    .licensed-container{
+        border: transparent;
+        backdrop-filter:blur(1px);
+        width: 300px;
+        
+        margin-left:35% ;
+    }
+    .white-image{
+        width: 50%;
+    }
+    .portfolio{
+        width: 50%;
+    }
+    .image-and-portfolio{
+        display: flex;
+        /* border: 1px solid red; */
+        margin-top: 60px;
+        margin-bottom: 60px;
+
+    }
+    .yellow-circle-and-group-investing{
+        display: flex;
+        flex-direction: row;
+        /* border: 1px solid red; */
+        width: 100%;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .yellow-circle > img{
+        width: 50%;
+        order: 2;
+    }
+
+    .yellow-circle{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 90px;
+        margin-bottom: 30px;
+    }
+    .text-inside{
+        width: 50%;
+        /* justify-self: flex-end; */
+        float: right;
+        position: relative;
+        padding-right: 140px;
+        padding-left: 140px;
+        padding-bottom: 200px;
+    top: -50px ;
+    order: 1;
+    
+    }
+    .blue-image-and-writeup{
+        display: flex;
+        margin-top: -60px;
+        margin-bottom: 60px;
+    }
+    #blue-image{
+        width: 100%;
+        max-width: 500px;
+    }
+    .blue-image-container{
+        width: 50%;
+        /* border: 1px solid red; */
+    }
+    .writeup{
+        width: 50%;
+        /* border: 1px solid red; */
+
+    }
+
+    .icon-is-here{
+        padding-top: 20px;
+        margin-bottom: 0;
+    }
+    .btn{
+        margin-top: 0;
+        width: 80%;
+    }
+    .blue-phone-and-writeup{
+        display: flex;
+        /* border: 1px solid red; */
+
+    }
+    #phones{
+        width: 40%;
+        /* justify-self: flex-end; */
+        /* align-self: flex-end; */
+        order: 2;
+        position: relative;
+    top: -60px ;
+
+    }
+    .wrte-up{
+        width: 60%;
+        order: 0;
+        /* border: 1px solid red; */
+        font-size: 30px;
+
+    }
+    #bar-slash{
+        display: none;
+    }
+    .navbar{
+        display: block;
+    }
+    nav ul li{
+        /* border: 1px solid red; */
+        list-style: none;
+    }
+    nav ul{
+        display: flex;
+        gap: 20px;
+        float: left;
+
+    }
+    nav ul li a{
+        color: #fff;
+        font-weight: bold;
+    }
+    .not-needed-desktop{
+        display: none;
+    }
+    #see{
+        display: inline;
+        font-weight: bolder;
+    }
+    .map{
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5px;
+        /* background-color: red; */
+    }
+    #uk-flag{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: relative;
+        top: -7px;
+    }
+    .wrte-up  > .btn, .qu{
+        display: none;
+    }
+   .get-to-know-us{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 100%;
+    /* justify-content: center;
+    align-items: center;*/
+   } 
+   .csr{
+    display: none;
+   }
+   .csr-desktop{
+    display: inline;
+   }
+   /* .side-for-desktop{
+    order: 2;
+    justify-self: flex-start;
+    align-self: flex-start;
+   } */
+   .order{
+    order: 5;
+    justify-self: flex-end;
+   }
+   .end-line{
+    margin-top: 350px;
+    display: none;
+   }
+   footer{
+    background: linear-gradient(180deg ,#000, #353e6e,#09305c);
+    border-top: 1px solid #000;
+    padding-right: 1rem;
+    padding-left: 80px;
+    /* border: 1px solid green; */
+    margin-top: 50px;
+    padding-top: 100px;
+   }
+   .end{
+    font-size: 20px;
+    display: none;
+
+   }
+   .ends{
+    padding-top: 20px;
+   }
+   #copilot{
+    position: relative;
+    left: -10px;
+   }
+   .ending-description-of-vulue{
+    display: none;
+    position: relative;
+    top: 0;
+    margin: 0;
+    padding: 0;
+   }
+   .ending-description-of-vulue > p{
+    display: none;
+   }
+   .dont-show{
+    display: none;
+   }
+   .desktop-list-end{
+    display: flex;
+    /* grid-template-columns: 1fr 1fr; */
+    /* grid-template-rows: 1fr; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    /* border: 1px solid red; */
+    /* background-color: green; */
+    
+   }
+   #rec{
+    display: none;
+   }
+    
+
+} 
+
+    </style>
+</head>
+<body>
+    <div class="container-1">
+        <header class="header", id="navbar">
+            <div>
+                <img class="org-logo" src="Assets/Picsart_24-01-18_00-42-43-893.png" alt="logo">
+                <span id="org-name"> <b>VULUE</b></span>
+            </div>
+            <i class="fa-solid fa-bars" id='bar-slash'class="bar-slash"></i>
+            <nav class="navbar">
+                <ul>
+                    <div class="map">
+                        <img src="Assets/nigeria flag.png" alt="flag of nigeria" style="width: 100%;">
+                        <img src="Assets/evaArrowIosBackOutline1.png" alt="">
+                    </div>
+
+                    <li><a href="#" class="nav-link">Log In</a></li>
+                    <li><a href="#" class="nav-link">Dashboard</a></li>
+                    <li><a href="#" class="nav-link">Our offerings</a>
+                       
+                    </li>
+                    <li><a href="#" class="nav-link">Investor Relations</a></li>
+                    <li><a href="#" class="nav-link">Contact Us</a></li>
+                    <img src="Assets/uk-flag.png" alt="flag of United kingdom" id="uk-flag">
+        
+                </ul>
+            </nav>
+       </header>
+       <br> <br> 
+        <main>
+            <h2 class="starting-text">
+                Innovative Products  <br>And Expert Ingenuity <br> At Your  Fingertips
+            </h2>
+            <div class="button-div">
+                <button class="iphone butn">
+                    <img src="Assets/Vector (3).png" alt="">
+                     Get on iphone
+                </button>
+                <button class="android butn">
+                    <img src="Assets/Vector (4).png" alt="">
+                    Get on Android</button>
+            </div>
+
+            <div class="container-2">
+                <div class="why-paragraph">
+                    <p class="whyee">Why Us</p>
+                    <p id="paras2">
+                        Investment vehicles to match your needs. From individuals to entities.
+                    </p>
+                    
+                    <div class="content">
+                    We are promising new <b>non-bank securities trading</b> and <b>assets management</b> company. While making huge stride to secure 
+                    a fund manager & derivates dealer license, we collaborated with experienced licensed corporate portfolio
+                     managers to offer these services via our platform 
+                    </div>
+                </div>    
+                <button class="desktop-button">
+                    Start Investing
+                </button>
+                <div class="qustion">
+                    Are you an institute or a business?
+                </div>
+                    <div class="icon-grid-div">
+                        <div class="up-placed grid-div">
+                            <br>
+                            <div class="box-example" style="width: 45px; height: 40px; background-color: rgb(38, 82, 82); border-radius: 10px;">
+                            
+                            <img src="Assets/Master Sergeant MSG.png" alt="master sergeant icon">
+                            </div>
+                            <div class="big-writing-in-div"> 
+                                <p>Millions of Naira </p>
+                                <p> already under </p>
+                                <p>management</p>
+                            </div>
+                            <span class="small-writing-in-div">with our portfolio <br> managers</span>
+                        </div>
+                        <div class="up-placed grid-div">
+                            <div class="box-example" style="width: 45px; height: 40px; background-color: rgb(38, 82, 82); border-radius: 10px;">
+                            <img src="Assets/Vector.png" alt="">
+                            </div>
+                         <p>Over 1,000</p>
+                            <p>clients</p>
+                        
+                            <span class="small-writing-in-div"> From Students to<br>HNWIs to businesses </span>
+                        </div>
+                        <div class="down-placed grid-div">
+                            <div class="box-example" style="width: 45px; height: 40px; background-color: rgb(38, 82, 82); border-radius: 10px;">
+                            <img src="Assets/Goal.png" alt="">
+                            </div>
+                            Mutli-strategy
+                            <p>Driven</p>
+
+                        </div>
+                        <div class="up-placed grid-div">
+                            <div class="box-example" style="width: 45px; height: 40px; background-color: rgb(38, 82, 82); border-radius: 10px;">
+                            <img src="Assets/Vector (2).png" alt="">
+                            </div>
+                            <p>Institutional-</p>
+                            <p>Grade Custody</p>
+                        </div>
+                        <div class="up-placed grid-div">
+                            <div class="box-example" style="width: 45px; height: 40px; background-color: rgb(38, 82, 82); border-radius: 10px;">
+                            <img src="Assets/Vector (1).png" alt="">
+                            </div>
+                            Headquatered
+                            <p>in Nigeria</p>
+                        </div>
+                        <div class="down-placed grid-div">
+                            <div class="box-example" style="width: 45px; height: 40px; background-color: rgb(38, 82, 82); border-radius: 10px;">
+                            <img src="Assets/Combo Chart.png" alt="">
+                            </div>
+                           <p> AI Embedded</p>
+                            <p>Market</p>
+                            <p>Technologies</p>
+                        </div>
+                        
+                    </div>
+                    <hr>
+                    <div class="licensed-container">
+                        <div class="text1"> <b>We are licensed as Fund Manager & Digital Sub-broker by SEC </b></div>
+                        <div class="img"><img src="Assets/SEC-NIGERIA-badge 2.png" alt="SEC bagde"></div>
+                        <div class="text2" style="opacity: .6;"> <a href="#" style="color: aqua; font-size: 12px;"> See licenses and<br>Disclosure </a></div>
+                    </div>
+                    <br><br>
+                <div class="image-and-portfolio">
+                    <div class="white-image">
+                        <img src="Assets/white-image.png" alt="white retangular image with black design ">
+                        <p style="font-size: 10px; position: relative; left: -90px;">Earn up to 25% APY</p>
+                        <p class="red" style="font-size: 8px; color: red; position: relative; left: -90px;"> see full risk disclosure</p>
+
+                    </div>
+                <div class="portfolio">
+                    <div class="port">
+                     <b>   Portfolio Management <br> with Tenor-Based Mirror <br>Trading Funds </b>
+                    </div>
+                    <br><br>
+                    <div class="lower-writeup">
+                        Our "Tenor-Based Mirror Trading Funds" are the <br> culmination of our team's best performing risk <br>
+                        managed strategies. Powered  by mirroring trades <br>of our expert securities  traders on TRAIL <sup>TM</sup> Quotes 
+                        linked to your vulue account. Providing you with all-round portfolio management on your digital securities
+                    </div>
+                    <button id="offer">
+                        See our offerings
+                    </button>
+                </div>    
+                </div>  
+            <div class="yellow-circle-and-group-investing">
+                <div class="yellow-circle">
+                    <img src="Assets/yellow-circle.png" alt="yellow-circle">
+                    <div class="text-inside">
+                        <p style="font-size: 23px;"><b>Financial insights</b></p>
+                        <p style="font-size: 23px;" id="copilot"><b>Co-pilot</b></p>
+                        <p style="font-size: 13px; opacity: .6;">Powered by TRAIL <sup>TM</sup> Quotes</p>
+                        <p style="float: right; opacity: .6;"><span>Our proprietary handles your question on </span>
+                            <span>finances, running analytics and forecasts. Helping </span>
+                        <span>you understand our products and make more </span>
+                        rational, informed decisions.</p>
+                    </div>
+
+                </div>
+            </div>      
+            <div class="blue-image-and-writeup">
+                <div class="blue-image-container">
+                <img src="Assets/blue-image.png" alt="a blue image" id="blue-image">
+                </div>
+                <div class="writeup">
+                    <div class="icon-is-here">
+                        <p id="group">Group Investing</p>
+                        <div class="explain">
+                        This feature allows multiple clients to transparently <br>
+                        invest collaboratively, meaning clients can create, invite  
+                        friends, family, associates and join group investing 
+                        plans without worrying about dispute. This strategy mitigates risk tied to concentrated investments and grants clients access to 
+                        opportunities that might be overlooked individually due to capital constraints.
+                        </div>
+                    </div>
+                    <button class="btn">
+                    Start Investing
+                    </button>
+                    <div class="qu">
+                        <P id="question"> Are you an institute or a business?</P>
+                    </div>
+                </div>
+            </div>
+            <div class="blue-phone-and-writeup">
+                
+                    <img src="Assets/phones.png" alt="two phones" id="phones">
+                 <br><br><br>
+                 <div class="wrte-up">
+                    <h3 class="csr-desktop" style="margin-bottom: 20px;">TRAIL <sup>TM</sup> Quotes</h3>
+                 <p class="paras">
+                    Promoting a market-leading platform doesn't only mean providing data and computational power, it also 
+                    means enabling ideas to shine. allowing you trade   effortlessly.
+                </p >
+                <p class="paras">
+                    Low-latency data driven market insights, signals and forecasts.
+                </p>
+                 <p class="paras">
+                    Centralized global data and market access across <a href="#" style="color: #0000ff;"> 20 
+                    countries</a> with our integrated execution innfastructure.
+                 </p>
+                 <p class="paras">
+                    Equities, Fixed Income, Currencies and commodities
+                    trading with futures,CFDs, options security-types  available.
+                 </p>
+                 <p class="paras">
+                    Extensive investment research and reporting, deeper financial insights co-pilot and a stratedy simulation
+                    environment to drastically improvw your trading experience!
+                 </p>
+                 <button class="btn">
+                    Start Investing
+                </button>
+                <div class="qu">
+                <P id="question"> Are you an institute or a business?</P>
+                </div>
+            </div>
+            </div>
+               <hr class="csr-desktop">
+            </main>
+            <footer style="padding-top: 80px;">
+                <img class="org-logo csr"  src="Assets/Picsart_24-01-18_00-42-43-893.png" alt="logo" style="margin-left: 25px; display: none;">
+                <div class="get-to-know-us footside csr" >
+                    <div class="know-us footside order">
+                        <h3>GET TO KNOW US</h3>
+                        <p><a href="#">About Us</a></p>
+                        <p><a href="#">Corporate Governance</a></p>
+                        <p><a href="#">Sustainability & <span class="csr">Corporate Social Responsibility</span> <span class="csr-desktop">CSR</span></a></p>
+                        <p><a href="#">Board & Management Team</a></p>
+                        <p><a href="#">Roadmap</a></p>
+                    </div>
+                    <div class="business footside order">
+                        <h3>OUR BUSINESS <span class="csr">AND OFFERING </span></h3>
+                        <p><a href="#">Investment Management</a></p>
+                        <p><a href="#">Securities Trading Technologies</a></p>
+                    </div>
+                    <div class="investment-relation footside order">
+                        <h3>INVESTOR RELATIONS</h3>
+                        <p><a href="#">Legal</a></p>
+                        <p><a href="#">Client Experience</a></p>
+                        <p><a href="#">Are You...</a></p>
+                        <p><a href="#">Financial Reports</a></p>
+
+                    </div>
+                    <div class="contact-us footside order" >
+                        <h3>CONTACT US</h3>
+                        <p><a href="#">Local Branch Offices</a></p>
+                        <p><a href="#">Support Center</a></p>
+                        <p><a href="#">Download center</a></p>
+                        <p><a href="#">Whistleblowing </a></p>
+                        <p><a href="#">Become a Partner</a></p>
+                        <p><a href="#">Feedback</a></p>
+                    </div>
+                    <div class="side-for-desktop" style="padding-top: 20px;margin-right: 40px;">
+                         <img class="org-logo csr-desktop"  src="Assets/Picsart_24-01-18_00-42-43-893.png" alt="logo">
+                         <p style="display: block; font-weight: bolder;" class="csr-desktop">VULUE</p>
+
+
+                        <div class="social-media-icons">
+                            <div class="twitter"><img src="Assets/Frame.png" alt="twitter icon"></div>
+                            <div class="linkedin"><img src="Assets/logo-linkedin 1.png" alt="linkedin logo"></div>
+                            <div class="instagram"><img src="Assets/instagram-logo.png" alt="instagram logo"></div>
+                            <div class="youtube"><img src="Assets/logo-youtube 1.png" alt="youtube logo"></div>
+                        </div>
+                        <br><br>
+                        <p class="csr">supportnigeria@vulue.org</p>
+                        
+                    </div>
+
+                </div>
+                <div class="desktop-list-end csr-desktop"   >
+                    <div class="left-part-of-div" style="width: 30%; float: left;">
+                        <img class="org-logo csr-desktop"  src="Assets/Picsart_24-01-18_00-42-43-893.png" alt="logo">
+                         <p style="display: block; font-weight: bolder;" class="csr-desktop">VULUE</p>
+                        <p>supportnigeria@vulue.org</p>
+                        <div class="social-media-icons">
+                            <div class="twitter"><img src="Assets/Frame.png" alt="twitter icon"></div>
+                            <div class="linkedin"><img src="Assets/logo-linkedin 1.png" alt="linkedin logo"></div>
+                            <div class="instagram"><img src="Assets/instagram-logo.png" alt="instagram logo"></div>
+                            <div class="youtube"><img src="Assets/logo-youtube 1.png" alt="youtube logo"></div>
+                        </div>
+                    </div>
+                    <div class="right-part-of-div" style="display: flex; width: 70%; float: right; gap: 10px;">
+                        <div class="know-us footside order">
+                            <h3>GET TO KNOW US</h3>
+                            <p><a href="#">About Us</a></p>
+                            <p><a href="#">Corporate Governance</a></p>
+                            <p><a href="#">Sustainability & <span class="csr">Corporate Social Responsibility</span> <span class="csr-desktop">CSR</span></a></p>
+                            <p><a href="#">Board & Management Team</a></p>
+                            <p><a href="#">Roadmap</a></p>
+                        </div>
+                        <div class="business footside order">
+                            <h3>OUR BUSINESS <span class="csr">AND OFFERING </span></h3>
+                            <p><a href="#">Investment <br> Management</a></p>
+                            <p><a href="#">Securities Trading <br>Technologies</a></p>
+                        </div>
+                        <div class="investment-relation footside order">
+                            <h3>INVESTOR RELATIONS</h3>
+                            <p><a href="#">Legal</a></p>
+                            <p><a href="#">Client Experience</a></p>
+                            <p><a href="#">Are You...</a></p>
+                            <p><a href="#">Financial Reports</a></p>
+    
+                        </div>
+                        <div class="contact-us footside order" >
+                            <h3>CONTACT US</h3>
+                            <p><a href="#">Local Branch Offices</a></p>
+                            <p><a href="#">Support Center</a></p>
+                            <p><a href="#">Download center</a></p>
+                            <p><a href="#">Whistleblowing </a></p>
+                            <p><a href="#">Become a Partner</a></p>
+                            <p><a href="#">Feedback</a></p>
+                        </div>
+                    </div>
+                </div>   
+                <div class="end-line csr-desktop" id="rec" style="padding-top: 300px;  margin: 0;">
+
+                    <p style="margin-top: 50px;">Vulue.org is a property of Vulue Technologies Limited, a company duly licensed by the Nigerian Securities and Exchange Commission.</p>
+                    <p style="margin-top: 20px;">Investment involves risk. The financial services provided by this platform carry varying levels of risk, from conservative to high, and while 
+                        diversification may help spread risk it does not guarantee profit, resulting in either profit or loss of all your funds. Although
+                        we observe prudent risk management practices on our passive investment offerings, you should never invest more money that you cannot afford
+                        to lose. 
+                        <span id="see"><a href="#" style="color: #0000ff; text-decoration: none;">See more</a></span>
+                    </p>
+                    <div class="ends">
+                        © 2024 Vulue Technologies Ltd. All Rights Reserved
+                    </div>
+                </div>
+                    <div class="ending-description-of-vulue csr"  style="display: block; color: #908da3; font-size: 20px;">
+                        <p>Vulue.org is a property of Vulue Technologies Limited, a company duly licensed by the Nigerian Securities and Exchange Commission.</p>
+                        <p>Investment involves risk. The financial services provided by this platform carry varying levels of risk, from conservative to high, and while diversification may help spread risk it does not guarantee profit, resulting in either profit or loss of all your funds. Although we observe prudent risk management practices on our passive investment 
+                        offerings, you should never invest more money that you cannot afford to lose. 
+                            <span id="see"><a href="#" style="color: #09305c; text-decoration: none;">See more</a></span>
+                        </p>
+                        <p class="not-needed-desktop">
+                        Unless otherwise specified, all return figures shown are for illustrative purposes only, and are not indicative of future performance or results.
+                         Actual returns will vary greatly and depend on various factors including personal and market circumstances. Our forecasts, analytics, or advisory
+                          are not a recommendation for the purchase or the sale of a financial instrument. We do not make warranties, expressed
+                         or implied, on our offerings, nr accept liability for any damages or losses, however caused, with use of related services.  
+                        </p>
+                        <p class="not-needed-desktop">
+                        Some statements contained in this website may be considered forward-looking statements and analytics which provide current expectations or forecasts 
+                        of future events. There is no assurance that the conditions described in this platform will remain in the future. You should carefully consider whether
+                         any investment views and investment 
+                        offerings are appropriate in view of your investment experience, objectives, financial resources and relevant circumstances,
+                         seek financial insights via the Co-pilot provided on this platform, our physical branch offics or an independent financial advisor.
+                        </p>
+                        <div class="end " id="dont-show" style="font-size: 15px; padding-bottom:20px ; ">
+                        © 2024 Vulue Technologies Ltd. All Rights Reserved
+                        </div>
+                    </div>
+            </footer>
+             
+                
+        </div>
+        
+        
+        
+    </div>
+
+    <script src="js/function.js"></script>
+    
+</body>
+</html>
